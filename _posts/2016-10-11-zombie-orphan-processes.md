@@ -13,7 +13,7 @@ comments: true
 </figure>
 Hey!!,,,wait,,wait,,wait,, This is not a post about Resident Evil or Walking Dead containing images about vicious monsters eating raw flesh, leaving destruction on it's path. It's just a terminology used in UNIX to categorize certain processes that we are gonna understand. Also, don't relate 'Orphan' to any movie. This post ain't any fun unless you are an UNIX junkie. \\
 A natural question that comes after we fork processes is that what happens after process termination? As an example, if the child processes terminates first and it returns it's exit status as in [Exit/Return]({% post_url 2016-09-15-Exit %}) system calls, but the parent hasn't reached the point where it accepts the status. Where does the status go? \\
-The opposite case is more strange, what if the Parent terminates first?, What happens to the child processes. Who is their parent? (NOTE: They can't be perfectly orphan, as one might execute [getppid()]({% post_url 2016-09-15-Fork %}) call. What shall it return then?
+The opposite case is more strange, what if the Parent terminates first?, What happens to the child processes. Who is their parent? (NOTE: They can't be perfectly orphan, as one might execute [getppid()]({% post_url 2016-09-15-fork %}) call. What shall it return then?
 Let's dive a little more deep with actual snippets of code:-
 
 ### Child terminates First

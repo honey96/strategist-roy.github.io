@@ -4,11 +4,11 @@ bio:                'Freshly baked blogs for Techies!!'
 description:        "A Tech blog serving posts about programming, gaming and what not"
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/gamepad.png'
-background:         'assets/img/placeholder-big.jpg'
+logo:               'assets/img/programmer.png'
+background:         'assets/img/background.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-# url:                https://taylantatli.github.io/Moon
+# url:                http://codecookies.xyz/
 base_url: ""
 
 # Jekyll
@@ -69,6 +69,7 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+  # - jemoji
 
 jekyll-mentions:
     base_url: https://github.com
