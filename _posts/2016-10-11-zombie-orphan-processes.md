@@ -49,7 +49,7 @@ During the time the parent was sleeping (for a whopping 100 secs), it gave me en
  PID TTY          TIME CMD
 4094 pts/21   00:00:19 bundle
 5570 pts/22   00:00:00 a.out
-5571 pts/22   00:00:00 a.out <defunct>
+5571 pts/22   00:00:00 a.out defunct
 5582 pts/23   00:00:00 ps
 {% endhighlight %}
 We can se an odd 'a.out defunct' entry marked with PID: 5571, that exactly matches the process id of the child process. But, we know that by the time parent kept executing, the child process has already terminated. Then, why is the entry still present in the process table (that's why displayed in 'ps -a' call)? \\
